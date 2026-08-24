@@ -41,7 +41,7 @@ class SettingsPreferences(context: Context) {
     }
 
     companion object {
-        const val DEFAULT_BASE_URL = "http://10.0.2.2:8000/" // Android Emulator default host mapping
+        const val DEFAULT_BASE_URL = "https://skinsafe-x00p.onrender.com/" // Android Emulator default host mapping
         private const val KEY_BASE_URL = "api_base_url"
         private const val KEY_NOTIFICATIONS = "notifications_enabled"
         private const val KEY_ONBOARDING_COMPLETED = "onboarding_completed"
