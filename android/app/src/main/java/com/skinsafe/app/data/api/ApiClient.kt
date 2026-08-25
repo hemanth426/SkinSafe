@@ -29,9 +29,9 @@ object ApiClient {
         val okHttpClient = OkHttpClient.Builder()
             .addInterceptor(AuthInterceptor(tokenManager))
             .addInterceptor(loggingInterceptor)
-            .connectTimeout(30, TimeUnit.SECONDS)
-            .readTimeout(30, TimeUnit.SECONDS)
-            .writeTimeout(30, TimeUnit.SECONDS)
+            .connectTimeout(180, TimeUnit.SECONDS)
+            .readTimeout(180, TimeUnit.SECONDS)
+            .writeTimeout(180, TimeUnit.SECONDS)
             .retryOnConnectionFailure(true)
             .build()
 
